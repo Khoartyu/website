@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome cho icon -->
+    <!-- CSS tùy chỉnh -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Slide về đăng nhập */
+        /* Slide nội dung */
+        #login:target~.modal.show .form-slider {
+            transform: translateX(0%);
+        }
+
+        #register:target~.modal.show .form-slider {
+            transform: translateX(-50%);
+        }
+
+        /* Gạch chân trượt theo tab */
+        #login:target~.modal.show .underline {
+            transform: translateX(0%);
+        }
+
+        #register:target~.modal.show .underline {
+            transform: translateX(100%);
+        }
+
+        .tab-header {
+            height: 50px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tab-link {
+            width: 50%;
+            text-align: center;
+            padding-bottom: 5px;
+            position: relative;
+        }
+
+        .underline {
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 50%;
+            background-color: #0d6efd;
+        }
+    </style>
+
+    </style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="thanhMenu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-link" href="AIweb.html">Fashion Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="AIweb.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Áo nam</a></li>
+                                <li><a class="dropdown-item" href="#">Quần nam</a></li>
+                                <li><a class="dropdown-item" href="#">Áo nữ</a></li>
+                                <li><a class="dropdown-item" href="#">Váy đầm</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Khuyến mãi</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="d-flex">
+                                <input type="text" class="me-2 border border-dark rounded-2 w-100"
+                                    placeholder="Tìm kiếm...">
+                                <a class="nav-link btn " href="#"><i class="fas fa-search"></i></a>
+                                <a href="loginAI.html" class="nav-link btn d-block d-md-none">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                                <button class="nav-link btn d-none d-md-block" data-bs-toggle="modal"
+                                    data-bs-target="#formdangnhap"><i class="fas fa-user"></i></button>
+                                <div class="dropdown d-none d-md-block">
+                                    <a class="nav-link  btn position-relative" href="#" id="cartDropdown"
+                                        data-bs-toggle="dropdown">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="cartDropdown"
+                                        style="min-width: 300px;">
+                                        <li class="mb-2 d-flex">
+                                            <img src="https://cdn2.yame.vn/pimg/ao-thun-co-tron-tay-ngan-soi-nhan-tao-thoang-mat-tron-dang-om-the-thao-beginner-01-0023137/a53fe67f-af69-0f00-5dea-001b511264bf.jpg?w=270&h=378&c=true&ntf=false" class="me-2"
+                                                style="width: 100px; height: 120px; object-fit: cover;">
+                                            <div>
+                                                <div>Áo thun nam cổ tròn</div>
+                                                <small class="text-muted">Size: M | Màu: Đen</small><br>
+                                                <span class="fw-bold">199.000đ</span>
+                                            </div>
+                                        </li>
+                                        Thêm nhiều <li> cho từng sản phẩm khác -->
+    <!-- <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="d-flex justify-content-between">
+                                            <strong>Tổng cộng:</strong>
+                                            <strong class="text-danger">627.000đ</strong>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href="giohang.html" class="btn btn-primary w-100">Xem giỏ hàng</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="giohang.html" class="nav-link btn position-relative d-block d-md-none">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="modal fade" id="formdangnhap">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title">
+                                <h3>Đăng nhập</h3>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="password" required>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="remember">
+                                    <label class="form-check-label" for="remember">Ghi nhớ đăng nhập</label>
+                                    <a href="#" class="float-end text-decoration-none">Quên mật khẩu?</a>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-100 mb-3">Đăng nhập</button>
+
+                                <div class="text-center mb-3">Hoặc đăng nhập bằng</div>
+
+                                <div class="social-login">
+                                    <button type="button" class="btn btn-outline-dark w-100 mb-2">
+                                        <i class="fab fa-google"></i> Google
+                                    </button>
+                                    <button type="button" class="btn btn-outline-dark w-100">
+                                        <i class="fab fa-facebook"></i> Facebook
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-none"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="container-sm">100% wide until small breakpoint</div>
+<div class="container-md">100% wide until medium breakpoint</div>
+<div class="container-lg">100% wide until large breakpoint</div>
+<div class="container-xl">100% wide until extra large breakpoint</div>
+<div class="container-xxl">100% wide until extra extra large breakpoint</div> -->
+    <!-- <section class="login-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="card login-card">
+                        <div class="card-body p-5">
+                            <h2 class="mb-4 text-center">Đăng nhập</h2>
+
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="password" required>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="remember">
+                                    <label class="form-check-label" for="remember">Ghi nhớ đăng nhập</label>
+                                    <a href="#" class="float-end text-decoration-none">Quên mật khẩu?</a>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-100 mb-3">Đăng nhập</button>
+
+                                <div class="text-center mb-3">Hoặc đăng nhập bằng</div>
+
+                                <div class="social-login">
+                                    <button type="button" class="btn btn-outline-dark w-100 mb-2">
+                                        <i class="fab fa-google"></i> Google
+                                    </button>
+                                    <button type="button" class="btn btn-outline-dark w-100">
+                                        <i class="fab fa-facebook"></i> Facebook
+                                    </button>
+                                </div>
+                            </form>
+
+                            <div class="text-center mt-4">
+                                Chưa có tài khoản?
+                                <a href="dangky.html" class="text-decoration-none">Đăng ký ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- tabs form -->
+    <!-- ------------------------------------- -->
+    <!-- nav & tabs -->
+    <div class="d-flex align-items-center justify-content-center w-100 vh-100"> <button class="" data-bs-toggle="modal"
+            data-bs-target="#formdangnhap"><i class="fa fa-user"></i>
+            <h3>Đăng Nhập</h3>
+        </button></div>
+    <div class="modal fade" id="formdangnhap">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <button data-bs-toggle="tab" data-bs-target="#formdangnhap" class="nav-link active">Đăng Nhập</button>
+                    </li>
+                    <li class="nav-item">
+                        <button data-bs-toggle="tab" data-bs-target="#formdangky" class="nav-link">Đăng ký</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="tab-pane fade show active" id="formdangnhap">
+                <!-- Form Đăng nhập -->
+                 <form action="" class="d-flex align-items-center justify-content-center" method="post">
+                <div class="col-4 m-2">
+                    <div class="form-group">
+                        <label for="" class="form-control">Tên đăng nhập</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-control"></label>
+                        <input type="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-control"></label>
+                        <input type="text">
+                    </div>
+                </div>
+            </form>
+              </div>
+              <div class="tab-pane fade show active" id="formdangky">
+                <!-- Form Đăng nhập -->
+              </div>
+            <form action="" class="d-flex align-items-center justify-content-center" method="post">
+                <div class="col-4 m-2">
+                    <div class="form-group">
+                        <label for="" class="form-control">Tên đăng nhập</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-control"></label>
+                        <input type="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-control"></label>
+                        <input type="text">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+    </div>
+</body>
+
+</html>

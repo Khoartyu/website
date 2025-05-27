@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yame Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #1e1e1e;
+        }
+
+        .navbar .nav-link,
+        .navbar-brand {
+            color: white !important;
+        }
+
+        .search-collapse {
+            background-color: #2c2c2c;
+        }
+
+        .btn-close-white {
+            filter: invert(1);
+        }
+
+        /* HERO */
+        .hero {
+            background-image: url('https://cdn.yame.vn/img/bg/bg-homepage.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            position: relative;
+        }
+
+        .hero h1 {
+            position: absolute;
+            bottom: 30px;
+            left: 50px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        /* SECTION WRAPPER: giống Yame - full width nhưng nội dung có padding ở giữa */
+        .section-wrapper {
+            width: 100%;
+            padding-inline: 15px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .product-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .custom-dropdown {
+            position: relative;
+            border-radius: 0px;
+            border:none;
+            overflow: hidden;
+            padding-top: 4px;
+            /* Đẩy nội dung xuống dưới thanh đỏ */
+        }
+
+        .custom-dropdown::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: #e70000;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+   <header>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background:#343a40;">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="/images/logo.png" width="100" height="33.33px" alt="logo"></a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <!-- Search -->
+    <div class="collapse" id="searchBar">
+        <div class="search-collapse py-3 border-bottom">
+            <div class="section-wrapper d-flex align-items-center">
+                <form class="d-flex flex-grow-1 me-2">
+                    <input type="text" class="form-control me-2" placeholder="Tìm sản phẩm..." />
+                    <button class="btn btn-primary" type="submit">Tìm</button>
+                </form>
+                <button class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#searchBar"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Thời trang cá tính - Phong cách riêng</h1>
+    </section>
+
+    <!-- Sản phẩm -->
+    <section class="py-5">
+        <div class="section-wrapper">
+            <h2 class="mb-4">Sản phẩm nổi bật</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="https://product.hstatic.net/1000230642/product/070004104.den.1_57a987ffba4f40c6a1d9b9e5e56e4890.jpg"
+                            class="card-img-top" alt="Áo thun đen Basic">
+                        <div class="card-body">
+                            <h5 class="card-title">Áo thun đen Basic</h5>
+                            <p class="card-text text-danger fw-bold">199.000đ</p>
+                            <a href="#" class="btn btn-outline-dark w-100">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="https://product.hstatic.net/1000230642/product/070004106.xnh.1_1996e8cf4cfc4d27b0b2e6833a9bdf82.jpg"
+                            class="card-img-top" alt="Áo sơ mi xanh">
+                        <div class="card-body">
+                            <h5 class="card-title">Sơ mi Xanh Navy</h5>
+                            <p class="card-text text-danger fw-bold">299.000đ</p>
+                            <a href="#" class="btn btn-outline-dark w-100">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="https://product.hstatic.net/1000230642/product/070003258.trg.1_13a0df79e82d4c2d82cb4522d0d4c6b8.jpg"
+                            class="card-img-top" alt="Quần jogger">
+                        <div class="card-body">
+                            <h5 class="card-title">Quần Jogger trắng</h5>
+                            <p class="card-text text-danger fw-bold">249.000đ</p>
+                            <a href="#" class="btn btn-outline-dark w-100">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="https://product.hstatic.net/1000230642/product/070003201.xam.1_2811e38f4e7c4eb2b3de2c4b95bc1b53.jpg"
+                            class="card-img-top" alt="Áo hoodie xám">
+                        <div class="card-body">
+                            <h5 class="card-title">Hoodie Xám Urban</h5>
+                            <p class="card-text text-danger fw-bold">349.000đ</p>
+                            <a href="#" class="btn btn-outline-dark w-100">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <ul class="dropdown">
+
+
+        <li><a href="/shop/quan-ao-thoi-trang-gia-tot?sort=1">Đặc Quyền Vàng VIP - Giảm Sâu 40%</a></li>
+        <li><a href="/shop/thoi-trang-gia-re-gia-tot?sort=2">YaMe Chọn Giúp Bạn</a></li>
+        <li><a href="/shop/khuyen-mai-thoi-trang?sort=1">Nhập Hội YaMe Kinh Điển</a></li>
+        <li><a href="/shop/quan-ao-phu-kien-gia-tot?sort=1">Beginner Sale Sốc</a></li>
+        <li><a href="/shop/phu-kien-thoi-trang-gia-re-gia-tot?sort=2">Hè Cháy - Phụ Kiện Slay</a></li>
+        <li><a href="/shop/phu-kien-doi-song?sort=2">Giá Đặc Biệt</a></li>
+        <li><a href="/shop/uu-dai-moi-tuan-giam-gia-khuyen-mai?sort=1">Outlet Sale</a></li>
+
+
+    </ul>
+
+    <div class="dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+            Phụ Kiện
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark custom-dropdown">
+            <li><a class="dropdown-item" href="#">Đặc Quyền Vàng VIP</a></li>
+            <li><a class="dropdown-item" href="#">YaMe Chọn Giúp Bạn</a></li>
+            <li><a class="dropdown-item" href="#">Nhập Hội YaMe</a></li>
+            <li><a class="dropdown-item" href="#">Beginner Sale Sốc</a></li>
+            <li><a class="dropdown-item" href="#">Outlet Sale</a></li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

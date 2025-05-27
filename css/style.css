@@ -1,0 +1,255 @@
+html {
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+@font-face {
+  font-family: myfirstfont;
+  src: url(/baocao/font/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Exo;
+  src: url(/baocao/font/Exo2-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: Exo;
+  background: #f1f0ec;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+.section-wrapper {
+  width: 100%;
+  padding-inline: 15px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* header */
+.navbar-toggler {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.navbar .text-white:hover {
+  color: #d0425b !important;
+  /* Tăng độ sáng của icon nếu có */
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #fff;
+}
+
+.navbar .nav-link i {
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.offcanvas {
+  transition: transform 0.2s ease-in-out !important; /* mặc định là 0.3s */
+}
+/* main */
+
+.cart-section {
+  padding: 50px 0;
+}
+
+.cart-item-image {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.quantity-input {
+  width: 60px;
+  text-align: center;
+}
+
+.login-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.login-card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.social-login .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-login .btn i {
+  margin-right: 8px;
+}
+
+.coldanhmuc {
+  margin: 0px 2px 0px 2px;
+}
+
+#danhmuc-link {
+  text-decoration: none;
+  color: #444444;
+}
+
+.list-group-item {
+  padding: 0px;
+  background-color: #f1f0ec;
+}
+
+.ccr {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#bn-cr {
+  position: static;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(3%) saturate(458%)
+    hue-rotate(160deg) brightness(95%) contrast(93%) !important;
+}
+
+#carouselExample .carousel-control-prev-icon,
+#carouselExample .carousel-control-next-icon,
+#carouselExample02 .carousel-control-prev-icon,
+#carouselExample02 .carousel-control-next-icon,
+#carouselExample03 .carousel-control-prev-icon,
+#carouselExample03 .carousel-control-next-icon,
+#carouselExample04 .carousel-control-prev-icon,
+#carouselExample04 .carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  filter: brightness(0) saturate(100%) invert(26%) sepia(3%) saturate(458%)
+    hue-rotate(160deg) brightness(95%) contrast(93%);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #454a4c !important;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+
+.dropdown-menu-dark {
+  background: #111111 !important;
+  border-top: 2.2px solid #f95555;
+  border-radius: 0%;
+  text-transform: none;
+}
+
+#danhmuc-link:hover {
+  color: #3666e0;
+}
+
+.price {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.thongtinsp h4 {
+  font-size: 1rem;
+}
+.thongtinsp p {
+  font-size: 1rem;
+  margin-top: -4px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+}
+.thongtinchitietsp {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+
+
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* footer */
+
+footer {
+  background-color: #454a4c !important;
+  color: #e4e4e4 !important;
+}
+
+.hover-link {
+  text-decoration: none !important;
+  /* Không gạch chân ban đầu */
+  color: #007bff;
+  transition: all 0.2s ease;
+}
+
+.hover-link:hover {
+  text-decoration: underline !important;
+  /* Gạch chân khi hover */
+}
+
+.footer a {
+  color: #e4e4e4 !important;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+#Danhsach {
+  color: #e4e4e4;
+  font-size: 0.9rem !important;
+}
+
+footer h4 {
+  text-transform: uppercase;
+}
+
+.footer .text-light {
+  font-size: smaller;
+  font-weight: 350 !important;
+}
+
+.footer .text-white {
+  font-size: 21px;
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+@media (max-width: 576px) {
+  .footer h4 a {
+    font-size: medium;
+  }
+
+  .footer .container {
+    text-align: center;
+  }
+
+  .footer p button {
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+
+.CollapseExample a {
+  text-decoration: none;
+  color: #f1f0ec;
+}
