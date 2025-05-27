@@ -2,139 +2,152 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Store</title>
-    <link rel="shortcut icon" href="../images/Assets/logo/logoc.png" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome cho icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- CSS tùy chỉnh -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
- <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background:#343a40; font-size: 15px;">
-        <div class="container">
-            <div class="d-flex">
-                <button class="navbar-toggler me-2" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand nav-link" id="lgbrand" href="../index.html">
-                    <img src="../images/Assets/logo/logobrand.png" width="100" height="33.33px" alt="logobrand">
-                </a>
-            </div>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background:#343a40; font-size: 15px;">
+            <div class="container">
+                <div class="d-flex">
+                    <button class="navbar-toggler me-2" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand nav-link" id="lgbrand" href="../index.html">
+                        <img src="../images/Assets/logo/logobrand.png" width="100" height="33.33px" alt="logobrand">
+                    </a>
+                </div>
 
-            <ul class="navbar-nav">
-                <li class="nav-item d-block d-md-none">
-                    <div class="d-flex">
-                        <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                            <i class="fas fa-search"></i>
-                        </a>
-
-                        <a href="loginAI.html" class="nav-link d-block d-md-none">
-                            <i class="fas fa-user"></i>
-                        </a>
-                        <a class="nav-link d-none d-md-block" data-bs-toggle="modal" data-bs-target="#formdangnhap">
-                            <i class="fas fa-user"></i>
-                        </a>
-
-                        <a href="giohang.html" class="nav-link position-relative">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="position-absolute start-100 m-1 translate-middle badge rounded-pill bg-danger cart-counter" style="top: 15%;">0</span>
-                        </a>&nbsp;&nbsp;&nbsp;
-                    </div>
-                </li>
-            </ul>
-
-            <div class="collapse navbar-collapse text-uppercase" id="navbarNav">
-                <ul class="navbar-nav m-auto text-white" style="font-size: medium;font-weight: 400;">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
-                            Khuyến mãi
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <div class="top-bar"></div>
-                            <li><a class="dropdown-item" href="khuyenmai.html">Đặc Quyền Vip - Giảm Sâu 40%</a></li>
-                            <li><a class="dropdown-item" href="#"> Chọn Giúp Bạn</a></li>
-                            <li><a class="dropdown-item" href="#">Nhập Hội Kinh Điển</a></li>
-                            <li><a class="dropdown-item" href="#">Beginner Sale Sốc</a></li>
-                            <li><a class="dropdown-item" href="#">Hè Cháy - Phụ Kiện Slay</a></li>
-                            <li><a class="dropdown-item" href="#">Giá Đặc Biệt</a></li>
-                            <li><a class="dropdown-item" href="#">Outlet Sale</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="mobandautuan.html">Mở Bán Tuần Này</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
-                            Quần Áo
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <div class="top-bar"></div>
-                            <li><a class="dropdown-item" href="#">Áo Thun</a></li>
-                            <li><a class="dropdown-item" href="#">Áo Khoác </a></li>
-                            <li><a class="dropdown-item" href="#">Áo Sơ Mi </a></li>
-                            <li><a class="dropdown-item" href="#">Quần Short </a></li>
-                            <li><a class="dropdown-item" href="#">Quần Dài</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
-                            Phụ Kiện
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Balo</a></li>
-                            <li><a class="dropdown-item" href="#">Túi Đeo</a></li>
-                            <li><a class="dropdown-item" href="#">Nón</a></li>
-                            <li><a class="dropdown-item" href="#">Ví</a></li>
-                            <li><a class="dropdown-item" href="#">Dây Nịt </a></li>
-                            <li><a class="dropdown-item" href="#">Dép</a></li>
-                            <li><a class="dropdown-item" href="#">Giày</a></li>
-                            <li><a class="dropdown-item" href="#">Găng Tay</a></li>
-                            <li><a class="dropdown-item" href="#">Khăn</a></li>
-                            <li><a class="dropdown-item" href="#">Nước Hoa </a></li>
-                            <li><a class="dropdown-item" href="#"> Vớ </a></li>
-                            <li><a class="dropdown-item" href="#">Quần Lót </a></li>
-                            <li><a class="dropdown-item" href="#">Phụ Kiện Thể Thao </a></li>
-                            <li><a class="dropdown-item" href="#">Dụng Cụ Cá Nhân</a></li>
-                        </ul>
-                    </li>
-                </ul>
                 <ul class="navbar-nav">
-                    <li class="nav-item d-none d-md-block">
+                    <li class="nav-item d-block d-md-none">
                         <div class="d-flex">
-                            <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                aria-controls="offcanvasTop">
                                 <i class="fas fa-search"></i>
                             </a>
-                            <a href="loginAI.html" id="lgbrand" class="nav-link d-block d-md-none">
+
+                            <a href="loginAI.html" class="nav-link d-block d-md-none">
                                 <i class="fas fa-user"></i>
                             </a>
-                            <a class="nav-link d-none d-md-block" id="lgbrand" data-bs-toggle="modal" data-bs-target="#formdangnhap">
+                            <a class="nav-link d-none d-md-block" data-bs-toggle="modal" data-bs-target="#formdangnhap">
                                 <i class="fas fa-user"></i>
                             </a>
+
                             <a href="giohang.html" class="nav-link position-relative">
                                 <i class="fas fa-shopping-cart"></i>
-                                <span class="position-absolute start-100 m-1 translate-middle badge rounded-pill bg-danger cart-counter" style="top: 15%;">0</span>
-                            </a>
+                                <span
+                                    class="position-absolute start-100 m-1 translate-middle badge rounded-pill bg-danger cart-counter"
+                                    style="top: 15%;">0</span>
+                            </a>&nbsp;&nbsp;&nbsp;
                         </div>
                     </li>
                 </ul>
+
+                <div class="collapse navbar-collapse text-uppercase" id="navbarNav">
+                    <ul class="navbar-nav m-auto text-white" style="font-size: medium;font-weight: 400;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
+                                data-bs-toggle="dropdown">
+                                Khuyến mãi
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <div class="top-bar"></div>
+                                <li><a class="dropdown-item" href="khuyenmai.html">Đặc Quyền Vip - Giảm Sâu 40%</a></li>
+                                <li><a class="dropdown-item" href="#"> Chọn Giúp Bạn</a></li>
+                                <li><a class="dropdown-item" href="#">Nhập Hội Kinh Điển</a></li>
+                                <li><a class="dropdown-item" href="#">Beginner Sale Sốc</a></li>
+                                <li><a class="dropdown-item" href="#">Hè Cháy - Phụ Kiện Slay</a></li>
+                                <li><a class="dropdown-item" href="#">Giá Đặc Biệt</a></li>
+                                <li><a class="dropdown-item" href="#">Outlet Sale</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="mobandautuan.html">Mở Bán Tuần Này</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
+                                data-bs-toggle="dropdown">
+                                Quần Áo
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <div class="top-bar"></div>
+                                <li><a class="dropdown-item" href="#">Áo Thun</a></li>
+                                <li><a class="dropdown-item" href="#">Áo Khoác </a></li>
+                                <li><a class="dropdown-item" href="#">Áo Sơ Mi </a></li>
+                                <li><a class="dropdown-item" href="#">Quần Short </a></li>
+                                <li><a class="dropdown-item" href="#">Quần Dài</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
+                                data-bs-toggle="dropdown">
+                                Phụ Kiện
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Balo</a></li>
+                                <li><a class="dropdown-item" href="#">Túi Đeo</a></li>
+                                <li><a class="dropdown-item" href="#">Nón</a></li>
+                                <li><a class="dropdown-item" href="#">Ví</a></li>
+                                <li><a class="dropdown-item" href="#">Dây Nịt </a></li>
+                                <li><a class="dropdown-item" href="#">Dép</a></li>
+                                <li><a class="dropdown-item" href="#">Giày</a></li>
+                                <li><a class="dropdown-item" href="#">Găng Tay</a></li>
+                                <li><a class="dropdown-item" href="#">Khăn</a></li>
+                                <li><a class="dropdown-item" href="#">Nước Hoa </a></li>
+                                <li><a class="dropdown-item" href="#"> Vớ </a></li>
+                                <li><a class="dropdown-item" href="#">Quần Lót </a></li>
+                                <li><a class="dropdown-item" href="#">Phụ Kiện Thể Thao </a></li>
+                                <li><a class="dropdown-item" href="#">Dụng Cụ Cá Nhân</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-none d-md-block">
+                            <div class="d-flex">
+                                <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                    aria-controls="offcanvasTop">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <a href="loginAI.html" id="lgbrand" class="nav-link d-block d-md-none">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                                <a class="nav-link d-none d-md-block" id="lgbrand" data-bs-toggle="modal"
+                                    data-bs-target="#formdangnhap">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                                <a href="giohang.html" class="nav-link position-relative">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span
+                                        class="position-absolute start-100 m-1 translate-middle badge rounded-pill bg-danger cart-counter"
+                                        style="top: 15%;">0</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-top w-100" style="height: 68px;" tabindex="-1" id="offcanvasTop"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="container">
+                <div class="offcanvas-header pt-1 py-0 d-flex">
+                    <input type="text" class="form-control custom-input"
+                        style="font-size: xx-large; border: none !important;box-shadow: none;"
+                        placeholder="Tìm sản phẩm..." />
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="offcanvas offcanvas-top w-100" style="height: 68px;" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-        <div class="container">
-            <div class="offcanvas-header pt-1 py-0 d-flex">
-                <input type="text" class="form-control custom-input" style="font-size: xx-large; border: none !important;box-shadow: none;" placeholder="Tìm sản phẩm..." />
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-        </div>
-    </div>
-</header>
+    </header>
 
     <!-- modal fade -->
     <div class="modal fade" id="formdangnhap">
@@ -186,1055 +199,137 @@
             </div>
         </div>
     </div>
-    <main class="section-wrapper">
-        <nav aria-label="breadcrumb">
-  <ol class="breadcrumb pt-1 py-1 bg-info-subtle" style="font-size: small;">
-    <li class="breadcrumb-item ms-2"><a href="..../index.html" class=" text-decoration-none"><i class="fa fa-house text-black link-primary"></i></a></li>
-    <li class="breadcrumb-item active" aria-current="page">Đặc Quyền Vàng VIP -40%</li>
-  </ol>
-</nav>
-        <!-- Hero Section -->
-        <section class="position-relative w-100 overflow-hidden mb-5">
-            <img src="../images/Assets/banner-carousel/thoi_trang_mac_suong.jpg" class="img-fluid w-100"
-                alt="Hero Image">
-        </section>
-        <!-- carousel danh mục -->
-        <div class="container-fluid mb-5 ccr">
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <div id="carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/15e98e98-310f-3800-d563-001bee3e4cf9.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/435627a0-5f56-0300-596d-001afd09d59a.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">57</span>
-                                <span style="color:#ff0000">&nbsp;46</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/06713670-7221-0100-bacb-001be813d44e.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">285</span>
-                                <span style="color:#ff0000">&nbsp;228</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample3" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample3" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample3" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp5.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">285</span>
-                                <span style="color:#ff0000">&nbsp;228</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample4" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample4" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample4" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp6.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp7.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="price">
-                        <span class="mb-1">
-                            <span style="text-decoration:line-through">49 </span>
-                            <span style="color:#ff0000">&nbsp;39 </span>
-                            <span class="text-dark">&nbsp;Giá mềm</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- carousel danh mục -->
-        <div class="container-fluid mb-5 ccr">
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <div id="carousel5" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp8.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp9.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">257 </span>
-                                <span style="color:#ff0000">&nbsp; 154 </span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample6" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample6" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample6" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp10.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp11.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">
-                                    557 </span>
-                                <span style="color:#ff0000">&nbsp;334</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample7" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp12.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp13.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample7" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample7" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">457 </span>
-                                <span style="color:#ff0000">&nbsp;274</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
 
 
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample8" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample8" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample8" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp13.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp14.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">397 </span>
-                                <span style="color:#ff0000">&nbsp;238</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- 2cr -->
-        <div class="container-fluid mb-5">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <div id="carousel5" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp8.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp9.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">257 </span>
-                                <span style="color:#ff0000">&nbsp; 154 </span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-12">
-                    <div id="carouselExample6" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample6" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample6" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp10.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp11.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">
-                                    557 </span>
-                                <span style="color:#ff0000">&nbsp;334</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        </div>
-        <!-- carousel danh mục -->
-        <div class="container-fluid mb-5 ccr">
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <div id="carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/15e98e98-310f-3800-d563-001bee3e4cf9.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/435627a0-5f56-0300-596d-001afd09d59a.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">57</span>
-                                <span style="color:#ff0000">&nbsp;46</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/06713670-7221-0100-bacb-001be813d44e.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">285</span>
-                                <span style="color:#ff0000">&nbsp;228</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample3" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample3" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample3" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp5.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">285</span>
-                                <span style="color:#ff0000">&nbsp;228</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample4" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample4" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample4" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp6.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp7.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="price">
-                        <span class="mb-1">
-                            <span style="text-decoration:line-through">49 </span>
-                            <span style="color:#ff0000">&nbsp;39 </span>
-                            <span class="text-dark">&nbsp;Giá mềm</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 2cr -->
-        <div class="container-fluid mb-5">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <div id="carousel5" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp8.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp9.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">257 </span>
-                                <span style="color:#ff0000">&nbsp; 154 </span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-12">
-                    <div id="carouselExample6" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample6" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample6" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp10.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp11.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">
-                                    557 </span>
-                                <span style="color:#ff0000">&nbsp;334</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- carousel danh mục -->
-        <div class="container-fluid mb-5 ccr">
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <div id="carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/15e98e98-310f-3800-d563-001bee3e4cf9.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/435627a0-5f56-0300-596d-001afd09d59a.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">57</span>
-                                <span style="color:#ff0000">&nbsp;46</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/06713670-7221-0100-bacb-001be813d44e.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">285</span>
-                                <span style="color:#ff0000">&nbsp;228</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample3" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample3" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample3" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp5.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">285</span>
-                                <span style="color:#ff0000">&nbsp;228</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample4" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample4" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample4" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp6.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp7.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="price">
-                        <span class="mb-1">
-                            <span style="text-decoration:line-through">49 </span>
-                            <span style="color:#ff0000">&nbsp;39 </span>
-                            <span class="text-dark">&nbsp;Giá mềm</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- carousel danh mục -->
-        <div class="container-fluid mb-5 ccr">
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <div id="carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/15e98e98-310f-3800-d563-001bee3e4cf9.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/435627a0-5f56-0300-596d-001afd09d59a.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">57</span>
-                                <span style="color:#ff0000">&nbsp;46</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/06713670-7221-0100-bacb-001be813d44e.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">285</span>
-                                <span style="color:#ff0000">&nbsp;228</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample3" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample3" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample3" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp5.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">285</span>
-                                <span style="color:#ff0000">&nbsp;228</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample4" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample4" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample4" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp6.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp7.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="price">
-                        <span class="mb-1">
-                            <span style="text-decoration:line-through">49 </span>
-                            <span style="color:#ff0000">&nbsp;39 </span>
-                            <span class="text-dark">&nbsp;Giá mềm</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- carousel danh mục -->
-        <div class="container-fluid mb-5 ccr">
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <div id="carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/15e98e98-310f-3800-d563-001bee3e4cf9.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/435627a0-5f56-0300-596d-001afd09d59a.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">57</span>
-                                <span style="color:#ff0000">&nbsp;46</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/06713670-7221-0100-bacb-001be813d44e.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">285</span>
-                                <span style="color:#ff0000">&nbsp;228</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample3" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample3" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample3" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp5.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">285</span>
-                                <span style="color:#ff0000">&nbsp;228</span>
-                                <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample4" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample4" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample4" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp6.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp7.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="price">
-                        <span class="mb-1">
-                            <span style="text-decoration:line-through">49 </span>
-                            <span style="color:#ff0000">&nbsp;39 </span>
-                            <span class="text-dark">&nbsp;Giá mềm</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 2cr -->
-        <div class="container-fluid mb-5">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <div id="carousel5" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel5" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel5" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp8.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp9.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">257 </span>
-                                <span style="color:#ff0000">&nbsp; 154 </span> <span class="text-dark">&nbsp;Giá
-                                    mềm</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-12">
-                    <div id="carouselExample6" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample6" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample6" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp10.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp11.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">
-                                    557 </span>
-                                <span style="color:#ff0000">&nbsp;334</span> <span class="text-dark">&nbsp;Giá
-                                    mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- carousel danh mục -->
-        <div class="container-fluid mb-5 ccr">
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/15e98e98-310f-3800-d563-001bee3e4cf9.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/435627a0-5f56-0300-596d-001afd09d59a.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">57</span>
-                                <span style="color:#ff0000">&nbsp;46</span> <span class="text-dark">&nbsp;Giá mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/06713670-7221-0100-bacb-001be813d44e.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">285</span>
-                                <span style="color:#ff0000">&nbsp;228</span> <span class="text-dark">&nbsp;Giá
-                                    mềm</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample3" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample3" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp5.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <div class="price">
-                            <span class="mb-1">
-                                <span style="text-decoration:line-through">285</span>
-                                <span style="color:#ff0000">&nbsp;228</span> <span class="text-dark">&nbsp;Giá
-                                    mềm</span>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div id="carouselExample4" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExample4" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExample4" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../images/Assets/carouselsanpham/sp6.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../images/Assets/carouselsanpham/sp7.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="price">
-                        <span class="mb-1">
-                            <span style="text-decoration:line-through">49 </span>
-                            <span style="color:#ff0000">&nbsp;39 </span> <span class="text-dark">&nbsp;Giá mềm</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid d-flex justify-content-center">
+    <main class="section-wrapper mt-3">
+        <div class="container d-flex justify-content-center">
             <div class="w-100">
-                <div style="height:300px;display:block;overflow:auto;font-size: 16px !important;border: solid 1px #777;background-color: #fff; border-radius:7px 7px;"
-                    class="scroll mb-4">
-                    <artice class="container">
-                        <div class="mt-2 p-4">
-                            <div class="col-12">
-                                <h3>Triple Sale: Thời trang &amp; Phụ kiện GIÁ HỜI- Cơ hội duy nhất sở hữu items độc đáo
-                                </h3>
-                            </div>
-                            <div class="col-12">
-                                <div>
-                                    <h2></h2>
-                                    <p>YaMe - Triple Sale: Thời trang &amp; Phụ kiện GIÁ HỜI - Cơ hội duy nhất sở hữu
-                                        items độc đáo!</p>
-                                    <p>YaMe mang đến "cú nổ" mua sắm với <strong>3 chương trình sale</strong> cực hấp
-                                        dẫn, đáp ứng mọi nhu cầu của phái mạnh:</p>
-                                    <p><strong>1. "Giá Luôn Tốt" - Thời trang nam:</strong></p>
-                                    <ul>
-                                        <li><strong>Giá tốt mỗi ngày:</strong> Không cần chờ sale, YaMe cam kết giá cạnh
-                                            tranh nhất thị trường cho các sản phẩm thời trang nam chất lượng.</li>
-                                        <li><strong>Chất lượng vượt trội:</strong> Chất liệu cao cấp, đường may tỉ mỉ,
-                                            kiểu dáng đa dạng từ áo thun, sơ mi, quần jean đến quần tây.</li>
-                                        <li><strong>Phong cách cho mọi chàng:</strong> Basic, lịch lãm, năng động, YaMe
-                                            đều có sản phẩm phù hợp với bạn.</li>
-                                        <li><strong>Mua sắm tiện lợi:</strong> Online tại YaMe.vn hoặc trực tiếp tại hệ
-                                            thống cửa hàng.</li>
-                                    </ul>
-                                    <p><strong>2. "Giá Luôn Tốt" - Phụ kiện thời trang, thể thao, gym:</strong></p>
-                                    <ul>
-                                        <li><strong>Phụ kiện đa dạng:</strong> Thắt lưng, ví da, mũ nón, kính mát, balo,
-                                            túi
-                                            xách, khăn tập gym, găng tay, đai lưng,...</li>
-                                        <li><strong>Chất lượng đảm bảo:</strong> Sản phẩm chính hãng, bền đẹp, hỗ trợ
-                                            tối đa cho
-                                            phong cách và luyện tập.</li>
-                                        <li><strong>Giá cực ưu đãi:</strong> Sở hữu phụ kiện chất lượng với giá "hời"
-                                            mỗi ngày.
-                                        </li>
-                                    </ul>
-                                    <p><strong>3. Sale Kết Thúc Vòng Đời:</strong></p>
-                                    <ul>
-                                        <li><strong>Giảm giá đến 70%:</strong> Cơ hội cuối cùng sở hữu những items độc
-                                            đáo,
-                                            không được tái sản xuất.</li>
-                                        <li><strong>Sản phẩm chất lượng:</strong> Vẫn đảm bảo chất lượng YaMe từ chất
-                                            liệu,
-                                            đường may đến kiểu dáng.</li>
-                                        <li><strong>Săn sale "có 1-0-2":</strong> Tạo phong cách riêng với những items
-                                            "limited", không lo "đụng hàng".</li>
-                                    </ul>
-                                    <p><strong>Lợi ích khi mua sắm tại YaMe:</strong></p>
-                                    <ul>
-                                        <li><strong>Tiết kiệm tối đa:</strong> Giá tốt mỗi ngày, sale kết thúc vòng đời
-                                            giảm sâu.</li>
-                                        <li><strong>Chất lượng hàng đầu:</strong> Sản phẩm bền đẹp, an tâm sử dụng.</li>
-                                        <li><strong>Phong cách đa dạng:</strong> Đáp ứng mọi nhu cầu và sở thích.</li>
-                                        <li><strong>Mua sắm tiện lợi:</strong> Online hoặc trực tiếp tại cửa hàng.</li>
-                                    </ul>
-                                    <p><strong>Đừng bỏ lỡ cơ hội mua sắm "trọn gói" với 3 chương trình sale hấp dẫn tại
-                                            YaMe!</strong></p>
-                                    <p><strong>Từ khóa tìm kiếm:</strong> YaMe, Giá Luôn Tốt, Sale Kết Thúc Vòng Đời,
-                                        thời trang nam, phụ kiện thời trang, phụ kiện thể thao, phụ kiện tập gym, giảm
-                                        giá, sale off, giá rẻ, chất lượng.</p>
-                                    <p><strong>#YaMe #GiaLuonTot #SaleKetThucVongDoi #ThoiTrangNam #PhuKien</strong></p>
-                                    <p><strong>Truy cập YaMe.vn hoặc ghé thăm cửa hàng YaMe gần nhất ngay hôm
-                                            nay!</strong></p>
+                <div class="row">
+                    <div class="col-12">
+                        <form action="" class="p-3 d-flex align-items-center justify-content-center" method="post">
+                            <div class="tittle d-block">
+                                <div class="text-center text-white display-6 p-2 bg-dark border border-0 rounded-0">Đăng
+                                    Ký</div>
+                                <div class="container border rounded-0 rounded-top-0 p-3">
+                                    <!-- Thanh tiêu đề ra ngoài container -->
+                                    <div class="row g-2">
+                                        <div class="col-6">
+                                            <input class="form-control" type="text" name="" id=""
+                                                placeholder="First Name">
+                                        </div>
+                                        <div class="col-6">
+                                            <input class="form-control" type="text" name="" id=""
+                                                placeholder="Last Name">
+                                        </div>
+                                        <div class="col-6">
+                                            <input class="form-control" type="text" name="" id=""
+                                                placeholder="Username">
+                                        </div>
+                                        <div class="col-6">
+                                            <input class="form-control" type="text" name="" id=""
+                                                placeholder="Phone Number">
+                                        </div>
+                                        <div class="form-group mb-2">
+
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Your E-mail Address" required>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <select class="form-select mb-3">
+                                                <option>Gender</option>
+                                                <option value="1">Nam</option>
+                                                <option value="2">Nữ</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <input class="form-control" type="date" name="" id=""
+                                                placeholder="Date Of Birth : DD/MM/YY">
+                                        </div>
+
+                                        <div class="col-12">
+                                            <input class="form-control" type="text" name="" id=""
+                                                placeholder="Your Company's Name">
+                                        </div>
+                                        <div class="col-6">
+                                            <textarea name="" id="" class="w-100"
+                                                placeholder="  Home Address"></textarea>
+                                        </div>
+                                        <div class="col-6">
+                                            <textarea name="" id="" class="w-100"
+                                                placeholder="  Office Address"></textarea>
+                                        </div>
+                                        <div class="col-6">
+                                            <input class="form-control" type="password" name="" id=""
+                                                placeholder="Password">
+                                        </div>
+                                        <div class="col-6">
+                                            <input class="form-control" type="password" name="" id=""
+                                                placeholder="Comfirm password">
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" for="checkChecked" type="checkbox" value=""
+                                                id="checkDefault" checked>
+                                            <label class="form-check-label" for="checkDefault">
+                                                Tôi đã đọc, hiểu và chấp thuận Chính sách Bảo mật của adidas, Các Điều
+                                                khoản và Điều kiện của adiClub và Các Điều khoản và Điều kiện của trang
+                                                Web.
+
+                                                * </label>
+                                                
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault"
+                                                checked>
+                                            <label class="form-check-label" for="checkDefault">
+
+                                                Tôi theo đây đồng ý việc sử dụng thông tin cá nhân của tôi cho các mục
+                                                đích quảng cáo và khuyến mại được quy định tại Chính sách bảo mật của
+                                                adidas. </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault"
+                                                checked>
+                                            <label class="form-check-label" for="checkDefault">
+                                                Tôi theo đây đồng ý việc chuyển giao, chia sẻ, sử dụng, thu thập và tiết
+                                                lộ thông tin cá nhân của tôi cho các bên thứ ba được quy định tại Chính
+                                                sách bảo mật của adidas.
+
+                                                * </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="checkChecked">
+                                            <label class="form-check-label" for="checkChecked">
+                                                Giữ đăng nhập cho tôi. Áp dụng cho mọi tuỳ chọn.
+
+                                                Thêm thông tin
+                                            </label>
+
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
                                 </div>
                             </div>
-
-                        </div>
-                        </article>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <!-- Footer -->
     <footer class="footer pt-2">
         <div class="row mb-2">
             <div class="col-12 text-center" id="ThongTinFooter">
                 <div class="mt-2 mb-2">
                     <!-- <a class="" 
-                        href="..../index.html">
-                        <a href="#" style="padding: 20.5px 5px 24.5px 0px !important ;font-weight:900;"
-                            class="border border-5 border-warning p-3">
-                            <img src="../images/Assets/logo/logochinh.png" width="75px" height="65px" alt=""
-                                style="background-color: #fff; border-right: 5px solid rgb(255, 193, 7) ;">&nbsp;fashionStore.vn
+                        href="/index.html">
+                        <a href="#" style="padding: 8px 2px 10px 0px !important ;font-weight:bolder; font-family: myfirstfont; font-size:0.5rem;"
+                            class="border border-3 border-warning p-3">
+                            <img src="../images/Assets/logo/logochinh.png" width="35px" height="30px" alt=""
+                                style="background-color: #fff; border-right: 3px solid rgb(255, 193, 7) ;">&nbsp;<b>fashionStore.vn</b>
                         </a>
                     </a> -->
-                    <a href="..../index.html"> <img src="../images/Assets/logo/logobrand01.png" alt="logobrand" width="210px"
+                    <a href="../index.html"> <img src="../images/Assets/logo/logobrand01.png" alt="logobrand" width="210px"
                             height="70px"></a>
                 </div>
                 <p style="margin-bottom: 0;font-weight: lighter;" class="text-light">Đặt hàng và thu tiền tận nơi
@@ -1244,7 +339,8 @@
                 <h4 class="mb-0 "><a href="#" style="color:#00ffff !important;" class="btn btn-link hover-link">Chương
                         trình
                         khuyến mãi</a></h4>
-                <h4 class="mb-0 "><a href="tranggioithieu.html" style="color:#00ffff !important;" class="btn btn-link hover-link">Giới
+                <h4 class="mb-0 "><a href="tranggioithieu.html" style="color:#00ffff !important;"
+                        class="btn btn-link hover-link">Giới
                         thiệu về
                         FashionStore</a></h4>
                 <h4 class="mb-0"><a href="#" style="color:#00ffff !important;" class="btn btn-link hover-link">Giới
@@ -1290,8 +386,10 @@
                     <button class="btn btn-link hover-link" style="color:#00ffff !important; border: none !important;"
                         type="button" data-bs-toggle="collapse" data-bs-target="#collapsedanhSach" aria-expanded="false"
                         aria-controls="collapseExample">
-                        Danh sách CH Fashion Store trên toàn quốc<span>&nbsp;&nbsp;<i
-                                class="fa fa-angle-down"></i></span>
+                        Danh sách CH Fashion Store trên toàn quốc
+                        <span>&nbsp;&nbsp;
+                            <i class="fa fa-angle-down"></i>
+                        </span>
                     </button>
                 </p>
                 <div class="collapse" id="collapsedanhSach">
@@ -1505,14 +603,16 @@
                         </div>
                     </div>
                 </div>
-                <h4><a href="#" style="color:#00ffff !important; text-transform:none !important;"
-                        class="btn btn-link hover-link"><span><i
-                                class="fa-solid fa-location-dot"></i></span>&nbsp;&nbsp;Tìm cửa hàng gần
-                        bạn</a></h4>
+                <h4>
+                    <a href="#" style="color:#00ffff !important; text-transform:none !important;"
+                        class="btn btn-link hover-link">
+                        <span><i class="fa-solid fa-location-dot"></i></span>&nbsp;&nbsp;Tìm cửa hàng gần
+                        bạn
+                    </a>
+                </h4>
             </div>
         </div>
-        </div>
-        </div>
+
         <div class="container d-flex justify-content-center">
             <div class="w-100 mb-3">
                 <div class="row">
@@ -1534,12 +634,9 @@
                 </div>
             </div>
         </div>
-
     </footer>
-
     <!-- Bootstrap 5 JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="../js/style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
