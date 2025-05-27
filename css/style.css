@@ -9,7 +9,7 @@ html {
 
 @font-face {
   font-family: Exo;
-  src: url(/baocao/font/Exo2-VariableFont_wght.ttf);
+  src: url(../baocao/font/Exo2-VariableFont_wght.ttf);
 }
 
 body {
