@@ -1,12 +1,9 @@
 html {
   font-size: clamp(14px, 2vw, 18px);
 }
-
-
-
 @font-face {
   font-family: Exo;
-  src: url(/baocao/font/Exo2-VariableFont_wght.ttf);
+  src: url(../baocao/font/Exo2-VariableFont_wght.ttf);
 }
 
 body {
